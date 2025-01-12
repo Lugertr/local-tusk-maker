@@ -6,6 +6,22 @@
     box-sizing: border-box;
 }
 
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
 .progress-bar {
     height: 4px;
     background-color: var(--bg-04);

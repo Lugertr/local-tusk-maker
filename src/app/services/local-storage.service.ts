@@ -1,6 +1,6 @@
 import { isNotNil } from '@shared/functions';
-import { Nullable } from '@shared/declarations';
 import { Injectable } from '@angular/core';
+import { Nullable } from '@shared/types';
 
 @Injectable({
   providedIn: 'root',

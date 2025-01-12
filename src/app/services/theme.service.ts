@@ -1,16 +1,16 @@
 import { Inject, Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
+import { Theme } from '../shared/types';
 
-export type Theme = 'dark' | 'light';
 export type Colors = 'textColor' | 'backgroundColor' | 'grayColor' | 'lightGrayColor' | 'primaryColor';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ThemeService {
-  private readonly THEME_KEY: Theme = 'light';
-  private themeSubject$ = new BehaviorSubject<Theme>((localStorage.getItem(this.THEME_KEY) as Theme) || 'dark');
+  private readonly THEME_KEY = 'theme';
+  private themeSubject$ = new BehaviorSubject<Theme>((localStorage.getItem(this.THEME_KEY) as Theme) || Theme.Light);
   get theme$(): Observable<Theme> {
     return this.themeSubject$.asObservable();
   }
@@ -27,7 +27,7 @@ export class ThemeService {
   }
 
   getColors(): Record<Colors, string> {
-    const computedStyles = getComputedStyle(document.body);
+    const computedStyles = getComputedStyle(this.document.body);
     return {
       textColor: computedStyles.getPropertyValue('--text-color'),
       backgroundColor: computedStyles.getPropertyValue('--background-color'),
