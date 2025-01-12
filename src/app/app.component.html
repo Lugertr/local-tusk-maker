@@ -1,4 +1,10 @@
-<tui-root>
+<tui-root [attr.tuiTheme]="darkMode() ? 'dark' : null">
+  @if (isProgressBarShown$ | async) {
+    <div class="progress-bar">
+      <div class="progress-bar-value"></div>
+    </div>
+  }
+
   <app-header></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
