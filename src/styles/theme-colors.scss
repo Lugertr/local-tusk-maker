@@ -1,0 +1,57 @@
+[tuiTheme='night'] {
+    --tui-text-primary: #CCCCFF;
+    --tui-text-secondary: rgba(204, 204, 255, 0.72);
+    --tui-text-tertiary: rgba(204, 204, 255, 0.6);
+    --tui-text-primary-on-accent-1: #CCCCFF; 
+    --tui-text-primary-on-accent-2: #CCCCFF; 
+    --tui-text-action: #A4A3CD;
+    --tui-text-action-hover: #5C5C9A;
+    --tui-text-negative: #FF8C67; // Сохраняем оттенок негативного 
+    --tui-text-negative-hover: #BB593A; 
+    --tui-text-positive: #44C596; // Аналогично позитивному цвету
+    --tui-text-positive-hover: #3AA981; 
+    
+    --tui-background-base: #292967; 
+    --tui-background-base-alt: #5C5C9A; 
+    --tui-background-neutral-1: rgba(204, 204, 255, 0.08); 
+    --tui-background-neutral-1-hover: rgba(204, 204, 255, 0.16);
+    --tui-background-neutral-1-pressed: rgba(204, 204, 255, 0.24);
+    --tui-background-neutral-2: rgba(164, 163, 205, 0.24); 
+    --tui-background-neutral-2-hover: rgba(164, 163, 205, 0.32);
+    --tui-background-neutral-2-pressed: rgba(164, 163, 205, 0.4);
+    
+    --tui-background-accent-1: #A4A3CD; // Акцентный фоновый цвет
+    --tui-background-accent-1-hover: #CCCCFF; 
+    --tui-background-accent-1-pressed: #5C5C9A; 
+    --tui-background-accent-2: #5C5C9A;
+    --tui-background-accent-2-hover: #A4A3CD;
+    --tui-background-accent-2-pressed: #292967;
+    --tui-background-accent-opposite: #CCCCFF; 
+    --tui-background-accent-opposite-hover: #A4A3CD; 
+    --tui-background-accent-opposite-pressed: #5C5C9A;
+    
+    --tui-background-elevation-1: #292967; 
+    --tui-background-elevation-2: #5C5C9A;
+    --tui-background-elevation-3: #A4A3CD;
+    
+    --tui-status-negative: #FF8C67;
+    --tui-status-negative-pale: rgba(204, 101, 101, 0.32);
+    --tui-status-negative-pale-hover: rgba(204, 101, 101, 0.4);
+    --tui-status-positive: #44C596; 
+    --tui-status-positive-pale: rgba(204, 204, 255, 0.32);
+    --tui-status-positive-pale-hover: rgba(164, 163, 205, 0.4);
+    --tui-status-warning: #FFC700; 
+    --tui-status-warning-pale: rgba(255, 199, 0, 0.32);
+    --tui-status-warning-pale-hover: rgba(255, 199, 0, 0.4);
+    --tui-status-info: #70B6F6; 
+    --tui-status-info-pale: rgba(112, 182, 246, 0.32);
+    --tui-status-info-pale-hover: rgba(112, 182, 246, 0.4);
+    --tui-status-neutral: #A4A3CD; 
+    
+    --tui-border-normal: rgba(164, 163, 205, 0.14); 
+    --tui-border-hover: rgba(164, 163, 205, 0.6);
+    --tui-border-focus: rgba(204, 204, 255, 0.64);
+    --tui-service-autofill-background: #5C5C9A; 
+    --tui-service-selection-background: rgba(164, 163, 205, 0.12);
+    --tui-service-backdrop: rgba(41, 41, 103, 0.75); 
+  }

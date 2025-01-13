@@ -38,12 +38,10 @@
               }
             ],
             "styles": [
-              "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
-              "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less",
-              "src/styles.scss",
               "@taiga-ui/core/styles/taiga-ui-theme.less",
               "@taiga-ui/core/styles/taiga-ui-fonts.less",
-              "@taiga-ui/addon-mobile/styles/taiga-ui-mobile.less"
+              "@taiga-ui/addon-mobile/styles/taiga-ui-mobile.less",
+              "src/styles.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
